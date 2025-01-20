@@ -1,0 +1,67 @@
+[
+    {
+        "model-name": "Role",
+        "resource-file": "roles.json",
+        "table-name": "roles"
+    },
+    {
+        "model-name": "Permission",
+        "resource-file": "permissions.json",
+        "table-name": "permissions"
+    },
+    {
+        "model-name": "Skill",
+        "resource-file": "skills.json",
+        "table-name": "skills"
+    },
+    {
+        "model-name": "Country",
+        "resource-file": "countries.json",
+        "table-name": "countries"
+    },
+    {
+        "model-name": "Language",
+        "resource-file": "languages.json",
+        "table-name": "languages"
+    },
+    {
+        "model-name": "Userinfo",
+        "resource-file": "userinfos.json",
+        "table-name": "userinfos"
+    },
+    {
+        "model-name": "Userinfosskill",
+        "resource-file": "userinfosskills.json",
+        "table-name": "userinfosskills"
+    },
+    {
+        "model-name": "Userinfos_skill",
+        "resource-file": "userinfos_skills.json",
+        "table-name": "userinfos_skills"
+    },
+    {
+        "model-name": "Projet",
+        "resource-file": "projets.json",
+        "table-name": "projets"
+    },
+    {
+        "model-name": "Project",
+        "resource-file": "projects.json",
+        "table-name": "projects"
+    },
+    {
+        "model-name": "Languages_userinfo",
+        "resource-file": "languages_userinfos.json",
+        "table-name": "languages_userinfos"
+    },
+    {
+        "model-name": "Candidature",
+        "resource-file": "candidatures.json",
+        "table-name": "candidatures"
+    },
+    {
+        "model-name": "Imageurl",
+        "resource-file": "imageurls.json",
+        "table-name": "imageurls"
+    }
+]

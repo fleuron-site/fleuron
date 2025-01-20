@@ -1,0 +1,641 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "labels": {
+                "fr": "Id",
+                "en": "Id"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": false,
+            "is-on-show": false,
+            "is-on-form": false,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": true,
+            "comment": null,
+            "is-nullable": false,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": true,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Enter id here...",
+                "en": "Enter id here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "id",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The id of the model.",
+                "en": "The id of the model."
+            }
+        },
+        {
+            "name": "tel",
+            "labels": {
+                "fr": "Téléphone",
+                "en": "Telephone"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "nullable|string|min:8|max:45",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [
+                45
+            ],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Entrez numéro de téléphone ici...",
+                "en": "Enter number phone here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "tel",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The tel of the model.",
+                "en": "The tel of the model."
+            }
+        },
+        {
+            "name": "amount_hour",
+            "labels": {
+                "fr": "Montant horaire",
+                "en": "Amount Hour"
+            },
+            "html-type": "number",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "nullable",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "double",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": "Montant \u00e0 facturer par heure",
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Entrez montant horaire ici...",
+                "en": "Enter amount hour here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "amount_hour",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The amount hour of the model.",
+                "en": "The amount hour of the model."
+            }
+        },
+        {
+             "name": "vacant",
+            "labels": {
+                "fr": "Disponibilité",
+                "en": "Vacant"
+            },
+            "html-type": "radio",
+            "css-class": "",
+            "options": {
+                "fr": {
+                    "Oui": "Oui",
+                    "Non": "Non"
+                },
+                "en": {
+                    "Oui": "Yes",
+                    "Non": "No"
+                }
+            },
+            "html-value": null,
+            "validation": "required",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "enum",
+            "data-type-params": [
+                3
+            ],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": "Disponible",
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Enter vacant here...",
+                "en": "Enter vacant here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "vacant",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The vacant of the model.",
+                "en": "The vacant of the model."
+            }
+        },
+        {
+            "name": "about",
+            "labels": {
+                "fr": "A propos de vous",
+                "en": "About"
+            },
+            "html-type": "textarea",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "nullable|string|min:0|max:4294967295",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [
+                4294967295
+            ],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Entrez votre biographie ici...",
+                "en": "Enter about here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "about",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The about of the model.",
+                "en": "The about of the model."
+            }
+        },
+        {
+            "name": "created_at",
+            "labels": {
+                "fr": "Créé au",
+                "en": "Created At"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "timestamp",
+            "data-type-params": [],
+            "data-value": "CURRENT_TIMESTAMP",
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "j/n/Y g:i A",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Enter created at here...",
+                "en": "Enter created at here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "created_at",
+            "is-api-visible": false,
+            "api-description": {
+                "fr": "The created at of the model.",
+                "en": "The created at of the model."
+            }
+        },
+        {
+            "name": "updated_at",
+            "labels": {
+                "fr": "Modifié au",
+                "en": "Updated At"
+            },
+            "html-type": "text",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": false,
+            "data-type": "timestamp",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": false,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": true,
+            "is-header": false,
+            "is-unsigned": false,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "j/n/Y g:i A",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Enter updated at here...",
+                "en": "Enter updated at here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": null,
+            "foreign-constraint": null,
+            "on-store": null,
+            "on-update": null,
+            "api-key": "updated_at",
+            "is-api-visible": false,
+            "api-description": {
+                "fr": "The updated at of the model.",
+                "en": "The updated at of the model."
+            }
+        },
+        {
+            "name": "countrie_id",
+            "labels": {
+                "fr": "Pays",
+                "en": "Countrie"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "required|numeric|min:0",
+            "is-on-index": false,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": false,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Entrez votre pays ici...",
+                "en": "Enter your countrie here..."
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "Country",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\Country",
+                    "countrie_id",
+                    "id"
+                ],
+                "field": "namecountry"
+            },
+            "foreign-constraint": {
+                "field": "countrie_id",
+                "references": "countries",
+                "on": "id",
+                "on-delete": "no action",
+                "on-update": "no action",
+                "references-model": "App\\Models\\Country",
+                "is-self-reference": false
+            },
+            "on-store": null,
+            "on-update": null,
+            "api-key": "countrie_id",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The countrie of the model.",
+                "en": "The countrie of the model."
+            }
+        },
+        {
+            "name": "users_id",
+            "labels": {
+                "fr": "Utilisateur",
+                "en": "User"
+            },
+            "html-type": "select",
+            "css-class": "",
+            "options": {},
+            "html-value": null,
+            "validation": "required",
+            "is-on-index": true,
+            "is-on-show": true,
+            "is-on-form": true,
+            "data-type": "string",
+            "data-type-params": [],
+            "data-value": null,
+            "is-index": true,
+            "is-unique": false,
+            "is-primary": false,
+            "comment": null,
+            "is-nullable": false,
+            "is-header": false,
+            "is-unsigned": true,
+            "is-auto-increment": false,
+            "is-inline-options": false,
+            "is-date": false,
+            "date-format": "",
+            "cast-as": "",
+            "placeholder": {
+                "fr": "Selectionnez l'Utilisateur",
+                "en": "Select users"
+            },
+            "delimiter": "; ",
+            "range": [],
+            "foreign-relation": {
+                "name": "User",
+                "type": "belongsTo",
+                "params": [
+                    "App\\Models\\User",
+                    "users_id",
+                    "id"
+                ],
+                "field": "last_name"
+            },
+            "foreign-constraint": {
+                "field": "users_id",
+                "references": "users",
+                "on": "id",
+                "on-delete": "no action",
+                "on-update": "no action",
+                "references-model": "App\\Models\\User",
+                "is-self-reference": false
+            },
+            "on-store": null,
+            "on-update": null,
+            "api-key": "users_id",
+            "is-api-visible": true,
+            "api-description": {
+                "fr": "The users of the model.",
+                "en": "The users of the model."
+            }
+        }
+    ],
+    "relations": [
+        {
+            "name": "languagesUserinfo",
+            "type": "hasOne",
+            "params": [
+                "App\\Models\\LanguagesUserinfo",
+                "userinfo_id",
+                "id"
+            ],
+            "field": "id"
+        },
+        {
+            "name": "userinfosSkill",
+            "type": "hasOne",
+            "params": [
+                "App\\Models\\UserinfosSkill",
+                "userinfo_id",
+                "id"
+            ],
+            "field": "id"
+        }
+    ],
+    "indexes": [],
+    "auto-manage-created-and-updated-at": true,
+    "table-name": "userinfos",
+    "protection": {
+        "is-model-protected": false,
+        "is-controller-protected": false,
+        "is-api-resource-protected": false,
+        "is-api-resource-collection-protected": false,
+        "is-api-documentation-protected": false,
+        "is-api-documentation-controller-protected": false,
+        "is-form-request-protected": false,
+        "is-languages-protected": false,
+        "is-form-view-protected": false,
+        "is-index-view-protected": false,
+        "is-create-view-protected": false,
+        "is-edit-view-protected": false,
+        "is-show-view-protected": false
+    },
+    "api-documentation": {
+        "access_token_with_bearer": {
+            "fr": "The access token prefixed with the \"Bearer \" key word.",
+            "en": "The access token prefixed with the \"Bearer \" key word."
+        },
+        "index_route_description": {
+            "fr": "Retrieve existing userinfos.",
+            "en": "Retrieve existing userinfos."
+        },
+        "index_route_response_description": {
+            "fr": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_key_is_the_model_property_and_the_value_is_the_model_value": {
+            "fr": "The array's key is the userinfo property name where the value is the assigned value to the retrieved userinfo.",
+            "en": "The array's key is the userinfo property name where the value is the assigned value to the retrieved userinfo."
+        },
+        "link_to_retrieve_first_page": {
+            "fr": "Link to retrieve first page.",
+            "en": "Link to retrieve first page."
+        },
+        "link_to_retrieve_last_page": {
+            "fr": "Link to retrieve last page.",
+            "en": "Link to retrieve last page."
+        },
+        "link_to_retrieve_previous_page": {
+            "fr": "Link to retrieve previous page.",
+            "en": "Link to retrieve previous page."
+        },
+        "link_to_retrieve_next_page": {
+            "fr": "Link to retrieve next page.",
+            "en": "Link to retrieve next page."
+        },
+        "the_number_of_current_page": {
+            "fr": "The number of current page.",
+            "en": "The number of current page."
+        },
+        "the_index_of_the_first_retrieved_item": {
+            "fr": "The index of first retrieved userinfo.",
+            "en": "The index of first retrieved userinfo."
+        },
+        "the_number_of_the_last_page": {
+            "fr": "The number of the last page.",
+            "en": "The number of the last page."
+        },
+        "the_base_link_to_the_resource": {
+            "fr": "The base link to the api resource.",
+            "en": "The base link to the api resource."
+        },
+        "the_number_of_models_per_page": {
+            "fr": "The number of userinfos per page.",
+            "en": "The number of userinfos per page."
+        },
+        "the_index_of_the_last_retrieved_item": {
+            "fr": "The index of last retrieved userinfo.",
+            "en": "The index of last retrieved userinfo."
+        },
+        "the_total_of_available_pages": {
+            "fr": "The total of the available pages.",
+            "en": "The total of the available pages."
+        },
+        "store_route_description": {
+            "fr": "Create new userinfo.",
+            "en": "Create new userinfo."
+        },
+        "store_route_response_description": {
+            "fr": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "update_route_description": {
+            "fr": "Update existsing userinfo.",
+            "en": "Update existsing userinfo."
+        },
+        "update_route_response_description": {
+            "fr": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "show_route_description": {
+            "fr": "Retrieve existsing userinfo.",
+            "en": "Retrieve existsing userinfo."
+        },
+        "show_route_response_description": {
+            "fr": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_id_of_model_to_retrieve": {
+            "fr": "The unique id of the userinfo to retrieve",
+            "en": "The unique id of the userinfo to retrieve"
+        },
+        "destroy_route_description": {
+            "fr": "Delete existsing userinfo.",
+            "en": "Delete existsing userinfo."
+        },
+        "destroy_route_response_description": {
+            "fr": "The API's response will be JSON based data. The JSON object will be structured as follow",
+            "en": "The API's response will be JSON based data. The JSON object will be structured as follow"
+        },
+        "the_id_of_model_to_delete": {
+            "fr": "The id of the userinfo to delete.",
+            "en": "The id of the userinfo to delete."
+        },
+        "general_description": {
+            "fr": "Allows you to list, create, edit, show and delete userinfos.",
+            "en": "Allows you to list, create, edit, show and delete userinfos."
+        },
+        "indicate_whether_the_request_was_successful_or_not": {
+            "fr": "Indicate whether the request was successful or not.",
+            "en": "Indicate whether the request was successful or not."
+        },
+        "the_id_of_the_model": {
+            "fr": "The id of the userinfo.",
+            "en": "The id of the userinfo."
+        },
+        "this_parameter_must_be_present_in_the_request": {
+            "fr": "This parameter must be present in the request.",
+            "en": "This parameter must be present in the request."
+        },
+        "the_request_failed_validation": {
+            "fr": "The request failed validation.",
+            "en": "The request failed validation."
+        },
+        "list_of_the_invalid_errors": {
+            "fr": "List of the invalid errors.",
+            "en": "List of the invalid errors."
+        },
+        "the_requested_model_does_not_exists": {
+            "fr": "The requested userinfo does not exists.",
+            "en": "The requested userinfo does not exists."
+        },
+        "the_user_does_not_have_permission_to_access_the_requested_resource": {
+            "fr": "User does not have permission to access the requested resource.",
+            "en": "User does not have permission to access the requested resource."
+        }
+    }
+}

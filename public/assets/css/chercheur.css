@@ -1,0 +1,65 @@
+.menus-offre{
+    color: #333;
+    font: normal 12px "Arial",Arial,Helvetica,sans-serif;
+    outline: 0;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 15px 0;
+    float: none;
+}
+
+ul.menus_offre li.postuler {
+    background-image: url(../images/offres_postuler.jpg);
+}
+
+
+ul.menus_offre li.ami {
+        background-image: url(../images/offres_ami.jpg);
+}
+
+ul.menus_offre li.imprime {
+    background-image: url(../images/offres_imprime.jpg);
+}
+
+ul.menus_offre li.last {
+    margin-right: 0;
+}
+
+ul.menus_offre li {
+    width: 235px;
+    height: 55px;
+    float: left;
+    margin-right: 15px;
+    background: #fff url(../images/vide.gif) center top no-repeat;
+    color: #bbb;
+    text-align: center;
+}
+li {
+    display: list-item;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menus_offre li a, ul.menus_offre li span {
+    width: 235px;
+    padding-top: 40px;
+    height: 15px;
+    color: #777;
+    display: block;
+    text-decoration: none;
+}
+
+.thtab{
+    height: 24px;
+    padding: 6px 4px 4px 4px;
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    background: url(../images/bg_tr.jpg) repeat-x left top;
+    border-left: 1px solid #d3ccc2;
+    border-right: 1px solid #bebaaf;
+}
