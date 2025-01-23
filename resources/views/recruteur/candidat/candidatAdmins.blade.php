@@ -50,15 +50,15 @@
 
     <hr>
 
-    <form action="{{ route('recruteur.recruitement') }}" method="post" accept-charset="UTF-8">
-    {{ csrf_field() }}
-        <input type="hidden" name="candidature_id" value="{{ $candidature->id }}">               
-        <input type="hidden" name="project_id" value="{{ $candidature->project->id }}">   
-        <?php
-            $candidat = DB::table('realisers')->where('$candidature_id', $candidature->id)
-        ?>  
-        @if(empty($candidat))          
-            <input type="submit" class="btn btn-outline-success btn-lg float-end">Continuer</button>
-        @endif
-    </form>
+    @if(empty($candidat))
+        <form action="{{ route('recruteur.recruitement') }}" method="post" accept-charset="UTF-8">
+        {{ csrf_field() }}
+            <input type="hidden" name="candidature_id" value="{{ $candidature->id }}">               
+            <input type="hidden" name="project_id" value="{{ $candidature->project->id }}">   
+            <?php
+                $candidat = DB::table('realisers')->where('$candidature_id', $candidature->id)
+            ?>            
+                <input type="submit" class="btn btn-outline-success btn-lg float-end">Continuer</button>
+        </form>
+    @endif
 </div>

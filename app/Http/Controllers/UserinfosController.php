@@ -135,17 +135,19 @@ class UserinfosController extends Controller
                 $this->insertLanguages($nouveauID, $languages, $request);
         
                 // Redirection avec message de succès
-                if (Auth::user()->hasRole('chercheur')) {
-                    return redirect('chercheur/' . $nouveauID . '/vos_informations')
-                        ->with('success_message', 'Vos informations ont été ajoutées avec succès, merci !');
-                } elseif (Auth::user()->hasRole('recruteur')) {
-                    return redirect('recruteur/' . $nouveauID . '/vos_informations')
-                        ->with('success_message', 'Vos informations ont été ajoutées avec succès, merci !');
-                }   
-                return back();
+                // if (Auth::user()->hasRole('chercheur')) {
+
+                return redirect('edition/' . $nouveauID . '/informations')
+                    ->with('success_message', 'Vos informations ont été ajoutées avec succès, merci !');
+
+                // } elseif (Auth::user()->hasRole('recruteur')) {
+                //     return redirect('recruteur/' . $nouveauID . '/vos_informations')
+                //         ->with('success_message', 'Vos informations ont été ajoutées avec succès, merci !');
+                // }   
+                // return back();
 
             } else {
-                return redirect('chercheur/' . $nouveauID . '/vos_informations')
+                return redirect('edition/' . $nouveauID . '/informations')
                     ->with('warning_message', 'Vos informations sont déjà prises en compte');
             }
         

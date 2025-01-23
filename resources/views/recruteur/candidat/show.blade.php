@@ -97,7 +97,7 @@
                                 @else
                                     <div class="card">
                                         <div class="card-header">
-                                            <h5 class="card-title">CV Not Available</h5>
+                                            <h5 class="card-title">CV non disponible</h5>
                                         </div>
                                         @if (Auth::user()->hasRole('chercheur'))
                                             <div class="card-body">

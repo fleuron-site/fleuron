@@ -2,7 +2,7 @@
     <div class="col-md-4">
         <!-- Trigger the modal with the image -->
 
-        <div class="card">
+        <div class="card"> 
             @if (!empty($candidature->photo) && Storage::disk('public')->exists($candidature->photo))
                 <img src="{{ asset('storage/' . $candidature->photo) }}" class="card-img-top image-preview" alt="Employee Image" data-bs-toggle="modal" data-bs-target="#imageModal">
                 
@@ -19,20 +19,22 @@
                     </div>
                 @endif
             @else
-                <img src="{{ asset('storage/' . $candidature->user->avatar) }}" class="card-img-top image-preview" alt="Default User Image" data-bs-toggle="modal" data-bs-target="#imageModal">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">{{ __("messages.NoImage") }}</h5> -->
-                    <div class="card-text">
-                        <form action="#" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            <div class="mb-3">
-                                <!-- <label for="imageUpload" class="form-label">{{ __("messages.UploadImage") }}</label> -->
-                                <input type="file" class="form-control" name="image" id="imageUpload" required>
-                                <button type="submit" class="btn btn-success btn-sm mt-2">{{ __("Charger") }}</button>
-                            </div>
-                        </form>
+                <img src="{{ asset('storage/' . $candidat->user->avatar) }}" class="card-img-top image-preview" alt="Default User Image" data-bs-toggle="modal" data-bs-target="#imageModal">
+                @if (Auth::user()->hasRole('chercheur'))
+                    <div class="card-body">
+                        <!-- <h5 class="card-title">{{ __("messages.NoImage") }}</h5> -->
+                        <div class="card-text">
+                            <form action="#" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="mb-3">
+                                    <!-- <label for="imageUpload" class="form-label">{{ __("messages.UploadImage") }}</label> -->
+                                    <input type="file" class="form-control" name="image" id="imageUpload" required>
+                                    <button type="submit" class="btn btn-success btn-sm mt-2">{{ __("Charger") }}</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
+                @endif
             @endif
         </div>
 
@@ -120,27 +122,43 @@
                     <span class="icon"><i class="bi bi-cash"></i></span>
                     <span class="info"><strong>Message:</strong> {{ $candidature->messagedif }}</span>
                 </li>
+                <li class="list-group-item">
+                    <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                    <span class="info"><strong>Date de candidature : </strong>
+                        {{ \Carbon\Carbon::parse($candidature->created_at)->format('d/m/Y H:i:s') }}
+                    </span>
+                    <span class="date-details float-end" id="created-date-details"
+                        style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
+                </li>
 
+                <li class="list-group-item">
+                    <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                    <span class="info"><strong>Date de modification : </strong>
+                        {{ \Carbon\Carbon::parse($candidature->updated_at)->format('d/m/Y H:i:s') }}
+                    </span>
+                    <span class="date-details float-end" id="updated-date-details"
+                        style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
+                </li>
+
+            @else
+                <li class="list-group-item">
+                    <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                    <span class="info"><strong>Date de candidature : </strong>
+                        {{ \Carbon\Carbon::parse($candidat->created_at)->format('d/m/Y H:i:s') }}
+                    </span>
+                    <span class="date-details float-end" id="created-date-details"
+                        style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
+                </li>
+
+                <li class="list-group-item">
+                    <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
+                    <span class="info"><strong>Date de modification : </strong>
+                        {{ \Carbon\Carbon::parse($candidat->updated_at)->format('d/m/Y H:i:s') }}
+                    </span>
+                    <span class="date-details float-end" id="updated-date-details"
+                        style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
+                </li>
             @endif
-            
-            <li class="list-group-item">
-                <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
-                <span class="info"><strong>Date de candidature : </strong>
-                    {{ \Carbon\Carbon::parse($candidature->created_at)->format('d/m/Y H:i:s') }}
-                </span>
-                <span class="date-details float-end" id="created-date-details"
-                    style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
-            </li>
-
-            <li class="list-group-item">
-                <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
-                <span class="info"><strong>Date de modification : </strong>
-                    {{ \Carbon\Carbon::parse($candidature->updated_at)->format('d/m/Y H:i:s') }}
-                </span>
-                <span class="date-details float-end" id="updated-date-details"
-                    style="font-family: 'Courier New', Courier, monospace ; color: #9b9b9b"></span>
-            </li>
-
             <li class="list-group-item">
                 <span class="icon"><i class="bi bi-file-earmark-text"></i></span>
                 <span class="info"><strong>A propos :</strong>
@@ -203,8 +221,13 @@
                 }
 
                 // Call the function to format dates
-                formatDate("{{ $candidature->created_at }}", "created-date-details");
-                formatDate("{{ $candidature->updated_at }}", "updated-date-details");
+                @if (!empty($candidature))
+                    formatDate("{{ $candidature->created_at }}", "created-date-details");
+                    formatDate("{{ $candidature->updated_at }}", "updated-date-details");                    
+                @else
+                    formatDate("{{ $candidat->user->created_at }}", "created-date-details");
+                    formatDate("{{ $candidat->user->updated_at }}", "updated-date-details"); 
+                @endif
             </script>
 
 

@@ -98,17 +98,10 @@
 
         @include('layouts.V2.scripts')        
 
-        <script src="assets/demo/chart-bar-demo.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
 
-        <script src="js/datatables/datatables-simple-demo.js"></script>
-
         <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js" crossorigin="anonymous"></script>
-
-        <script src="js/litepicker.js"></script>
-
-
 
         <script src="https://assets.startbootstrap.com/js/sb-customizer.js"></script>
 

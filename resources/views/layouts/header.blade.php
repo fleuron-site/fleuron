@@ -2,18 +2,6 @@
 
     <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="{{ route('welcome') }}">FLEURON</a>
 
-    <!-- <form class="form-inline me-auto d-none d-lg-block me-3">
-
-        <div class="input-group input-group-joined input-group-solid">
-
-            <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
-
-            <div class="input-group-text"><i data-feather="search"></i></div>
-
-        </div>
-
-    </form> -->
-
     <ul class="navbar-nav align-items-center ms-auto">
 
         <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">

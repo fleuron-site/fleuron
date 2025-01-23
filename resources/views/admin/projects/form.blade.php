@@ -66,8 +66,7 @@
                         min="0" 
                         id="prix" 
                         value="{{ old('prix', optional($project)->prix) }}"
-                        placeholder="{{ __('Ex : 20000') }}" 
-                        required>
+                        placeholder="{{ __('Ex : 20000') }}">
                     <span class="input-group-text bg-primary text-white">{{ __('Francs CFA') }}</span>
                 </div>
                 {!! $errors->first('prix', '<p class="text-danger mt-1 small">:message</p>') !!}
@@ -86,8 +85,7 @@
                         min="0" 
                         id="prixmax" 
                         value="{{ old('prixmax', optional($project)->prixmax) }}"
-                        placeholder="{{ __('Ex : 20000') }}" 
-                        required>
+                        placeholder="{{ __('Ex : 20000') }}">
                     <span class="input-group-text bg-primary text-white">{{ __('Francs CFA') }}</span>
                 </div>
                 {!! $errors->first('prixmax', '<p class="text-danger mt-1 small">:message</p>') !!}

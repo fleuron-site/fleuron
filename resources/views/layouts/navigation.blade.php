@@ -84,32 +84,6 @@
 
                         </a>
 
-                        <!-- <a href="{{route('admin.roles.index')}}" class="nav-link ml-4 {{ request()->is('*roles') ? 'nav-button-active' : 'nav-button' }}">
-
-                            <i class="fa fa-angle-right"></i>
-
-                            &nbsp;&nbsp;&nbsp;&nbsp;Roles
-
-                        </a>
-
-                        <a href="{{ route('admin.permissions.index') }}" class="nav-link ml-4 {{ request()->is('*permissions*') ? 'nav-button-active' : 'nav-button' }}">
-
-                            <i class="fa fa-angle-right"></i>
-
-                            &nbsp;&nbsp;&nbsp;&nbsp;Permissions
-
-                        </a>
-
-                        <a href="{{ route('admin.roles-assignment.index') }}"
-
-                            class="nav-link ml-4 {{ request()->is('*roles-assigment*') ? 'nav-button-active' : 'nav-button' }}">
-
-                           <i class="fa fa-angle-right"></i>
-
-                           &nbsp;&nbsp;&nbsp;&nbsp;Roles & Permissions
-
-                        </a> -->
-
                     </nav>
 
                 </div>
