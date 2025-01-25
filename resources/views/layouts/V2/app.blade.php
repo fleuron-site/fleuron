@@ -33,7 +33,7 @@
             <meta property="twitter:image" content="uploads/photoreseaux/{{ $donnees->imageurl->img }}"/>
             <meta property="twitter:image:alt" content="{{ $donnees->imageurl->descrip }}"/>
             <meta property="twitter:url" content="fleuron.tg"/>
-            <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=#{property?._id}&product=custom-share-buttons&source=platform"></script>
+            <!-- <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=#{property?._id}&product=custom-share-buttons&source=platform"></script> -->
         @endif 
         
         <!-- Google tag (gtag.js) -->

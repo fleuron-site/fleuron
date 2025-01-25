@@ -86,7 +86,7 @@
 
             <div class="row align-items-center justify-content-center">
 
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Toutes les offres</h2>
 
@@ -100,7 +100,7 @@
 
                 </div>
 
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Développement d'applications</h2>
 
@@ -122,7 +122,7 @@
 
                 </div>
 
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Services</h2>
 
@@ -144,11 +144,7 @@
 
                 </div>
 
-                    <!--</div>
-
-                    <div class="row gx-5">-->
-
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Système d'entreprise</h2>
 
@@ -170,7 +166,7 @@
 
                 </div>
 
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Graphisme</h2>
 
@@ -192,7 +188,7 @@
 
                 </div>
 
-                <div class="col-md-2 mb-4 text-center">
+                <div class="col-xl-2 mb-4 text-center">
 
                     <h2 class="mb-4">Web</h2>
 
